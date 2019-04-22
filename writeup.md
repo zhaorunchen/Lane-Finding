@@ -3,7 +3,7 @@
 ## Writeup ouline
 
 ### 1. Project rubric
-### 2. My pipline
+### 2. Reflection (my pipline)
 ### 3. Future work
 
 ---
@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 
 ---
 
-### Reflection
+### **2. Reflection**
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
