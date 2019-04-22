@@ -25,18 +25,19 @@ The goals / steps of this project are the following:
 
 ### **2. Reflection**
 
-#### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+#### 1. My pipeline and understandings
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+Generate pipline can be described as: Input(RGB) -> Gray scale image -> Blur(denoise) -> Edge(binary) detection -> Region of interest -> Hough transform -> Draw lines 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+
 
 ![alt text][image1]
 
+#### 2. As part of the description, explain how you modified the draw_lines() function.
 
-#### 2. Identify potential shortcomings with your current pipeline
+
+#### 3. Identify potential shortcomings with your current pipeline
 
 
 One potential shortcoming would be what would happen when ... 
