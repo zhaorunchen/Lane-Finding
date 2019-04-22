@@ -43,6 +43,7 @@ One potential shortcoming would be what would happen when ...
 
 Another shortcoming could be ...
 
+---
 
 ### **3. Future work**
 
