@@ -8,11 +8,11 @@
 
 ---
 
-### ** 1. Finding Lane Lines on the Road**
+### **1. Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road 
-**  - Does the pipeline for line identification take road images from a video as input and return an annotated video stream as output?
+** - Does the pipeline for line identification take road images from a video as input and return an annotated video stream as output?
 
 
 [//]: # (Image References)
