@@ -12,7 +12,9 @@
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road 
-  - Does the pipeline for line identification take road images from a video as input and return an annotated video stream as output?
+  - Does the pipeline for line identification take road images from a video as input and return an annotated video stream as output? (CHECK)
+  - Has a pipeline been implemented that uses the helper functions and / or other code to roughly identify the left and right lane lines with either line segments or solid lines? (example solution included in the repository output: raw-lines-example.mp4) (CHECK)
+  - Have detected line segments been filtered / averaged / extrapolated to map out the full extent of the left and right lane boundaries? (example solution included in the repository: P1_example.mp4) (CHECK)
 
 
 [//]: # (Image References)
