@@ -75,14 +75,16 @@ Now for single frame, it should has two main lines, left and right. Calculate th
 #### 3. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+1. One potential shortcoming would be that the lines are shivering a little bit.
 
-Another shortcoming could be ...
+2. Another shortcoming could be in the challenge video, sometimes we detect wrong lanes. This happens at
+ - There are tree's shadow which may create edges and at the same time if the dash lanes are two short, my draw-line algorithm will find the main line towards to other directions.
+ - The edge detection works well when there are black road, however in the challenge video, there is a part that the road is very bright which lead to very small gradient value between left yellow lane and road. To detect it, I have to decrease the low_threshold and also high_threshold in Canny, but at the same time you will also find a lot noise lines. 
 
 ---
 
 ### **3. Future work**
 
-A possible improvement would be to ...
+1. A possible improvement for question 1 above would be to compare lines with previous frames. If there is no big change (threshold), no need to redraw the lines for each frame.
 
-Another potential improvement could be to ...
+2. Another potential improvement for question 2 could be detecting line in color space instead of in gray scale image
