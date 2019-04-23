@@ -31,6 +31,7 @@ Generate pipline can be described as: Input(RGB) -> Gray scale image -> Blur(den
 
 Input(RGB) -> Gray scale image:
   - This part is easy to understand, instead of dealing with color image, dealing with only one channel image can save time
+  
 Gray scale image -> Blur(denoise):
   - Using Gaussian filter with kernel size 5. 
 
