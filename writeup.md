@@ -32,7 +32,7 @@ Generate pipline can be described as: Input(RGB) -> Gray scale image -> Blur(den
 Input(RGB) -> Gray scale image:
   - This part is easy to understand, instead of dealing with color image, dealing with only one channel image can save time
   
-Gray scale image -> Blur(denoise):
+Gray scale image -> Blur(denoise): ([OpenCV Document](https://docs.opencv.org/3.1.0/d4/d13/tutorial_py_filtering.html))
   - Using Gaussian filter with kernel size 5. 
   
 Blur(denoise) -> Edge(binary) detection
@@ -47,7 +47,7 @@ Edge(binary) detection -> Region of interest:
   - Put this step here is to decrease the computational cost for Hough transform. 
   - Draw ROI in image is helpful to visulaize the selected area
   
-Region of interest -> Hough transform:
+Region of interest -> Hough transform: ([OpenCV Document](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html))
   - trade off between speed and resolution (angle resolution and rho resolution)
   - trade off between finding more edges and preserve main edge (min_length, min_votes, max_gap...)
   
