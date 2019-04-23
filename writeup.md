@@ -37,9 +37,10 @@ Gray scale image -> Blur(denoise):
   
 Blur(denoise) -> Edge(binary) detection
   - Using Canny detector (uint8 type result is need for next step, Canny provides binary result)
-  - Canny detection includes: 
-    - smooth (did)
-    - 
+  - Canny detection includes: (https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_canny/py_canny.html)
+    - Smooth (did)
+    - Compute gradient of using any of the gradient operators Sobel or Prewitt
+    - Extract edge points: Non-maximum suppression
 
 
 
