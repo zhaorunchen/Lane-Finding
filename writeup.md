@@ -57,11 +57,11 @@ Hough transform -> Draw lines:
 
 #### 2. As part of the description, explain how you modified the draw_lines() function.
 
-Loop:
+Loop in all frames:
 
 for single frame:
 
-  for a pair vertices (x1,y1) (x2,y2):
+    for a pair vertices (x1,y1) (x2,y2):
   
     1. Calculate slop: y2-y1/x2-x1
     
@@ -69,7 +69,7 @@ for single frame:
     
     3. Calculate the length and check if this line has the longest length. If so, record it as the main line in this frame
   
- 
+Now for single frame, it should has two main lines, left and right. Calculate the slops and intersections. Since we want to draw lines starting from bottom and ending at middle of the image, so we can manuuly define y1_left_new, y2_left_new, y1_right_new and y2_right_new. Finally, we could using slops and intersections to find x. 
 
 
 #### 3. Identify potential shortcomings with your current pipeline
