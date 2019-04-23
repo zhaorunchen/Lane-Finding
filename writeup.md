@@ -55,9 +55,16 @@ Hough transform -> Draw lines:
   - Just draw it!
 
 
-![alt text][image1]
-
 #### 2. As part of the description, explain how you modified the draw_lines() function.
+
+Loop:
+for single frame:
+  for a pair vertices (x1,y1) (x2,y2):
+    1. Calculate slop: y2-y1/x2-x1
+    2. Separate detected line into two catagories: left lane and right lane, slop > threshold and slop < threshold
+    3. Calculate the length and check if this line has the longest length. If so, record it as the main line in this frame
+  
+ 
 
 
 #### 3. Identify potential shortcomings with your current pipeline
