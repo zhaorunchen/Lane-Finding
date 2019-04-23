@@ -34,6 +34,12 @@ Input(RGB) -> Gray scale image:
   
 Gray scale image -> Blur(denoise):
   - Using Gaussian filter with kernel size 5. 
+  
+Blur(denoise) -> Edge(binary) detection
+  - Using Canny detector (uint8 type result is need for next step, Canny provides binary result)
+  - Canny detection includes: 
+    - smooth (did)
+    - 
 
 
 
