@@ -36,12 +36,23 @@ Gray scale image -> Blur(denoise):
   - Using Gaussian filter with kernel size 5. 
   
 Blur(denoise) -> Edge(binary) detection
-  - Using Canny detector (uint8 type result is need for next step, Canny provides binary result)
+  - Using Canny detector (uint8 type result is need for Hough transform, Canny provides binary result)
   - Canny detection includes: ([OpenCV Document](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_canny/py_canny.html))
     - Smooth (did)
     - Compute gradient of using any of the gradient operators Sobel or Prewitt
-    - Extract edge points: Non-maximum suppression
+    - Extract edge points: Non-maximum suppression. Looking for local maximum based on gradient magnitude and direcyion
+    - Hysteresis Thresholding (gradient value): non-edge if < low_threshold, sure-edge if > high_threshold, pixels with gradient in between check if directly connect to edge
 
+Edge(binary) detection -> Region of interest:
+  - Put this step here is to decrease the computational cost for Hough transform. 
+  - Draw ROI in image is helpful to visulaize the selected area
+  
+Region of interest -> Hough transform:
+  - trade off between speed and resolution (angle resolution and rho resolution)
+  - trade off between finding more edges and preserve main edge (min_length, min_votes, max_gap...)
+  
+Hough transform -> Draw lines:
+  - Just draw it!
 
 
 ![alt text][image1]
