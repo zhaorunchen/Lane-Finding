@@ -29,6 +29,10 @@ The goals / steps of this project are the following:
 
 Generate pipline can be described as: Input(RGB) -> Gray scale image -> Blur(denoise) -> Edge(binary) detection -> Region of interest -> Hough transform -> Draw lines 
 
+Input(RGB) -> Gray scale image:
+  - This part is easy to understand, instead of dealing with color image, dealing with only one channel image can save time
+Gray scale image -> Blur(denoise):
+  - Using Gaussian filter with kernel size 5. 
 
 
 
